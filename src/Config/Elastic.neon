@@ -165,9 +165,11 @@ services:
 
 	nullLoggerHandler:
 		factory: Spameri\Elastic\Import\Run\NullLoggerHandler
+		autowired: false
 
 	nullLock:
 		factory: Spameri\Elastic\Import\Lock\NullLock
+		autowired: false
 
 	nullHandler:
 		factory: Spameri\Elastic\Import\RunHandler\NullHandler
