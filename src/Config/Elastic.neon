@@ -79,9 +79,11 @@ services:
 
 	elasticPanelLogger:
 		factory: Spameri\Elastic\Diagnostics\PanelLogger(@spameriElasticSearch.nullLogger)
+		autowired: false
 
 	nullLogger:
 		factory: Psr\Log\NullLogger
+		autowired: false
 
 	elasticPanel:
 		factory: Spameri\Elastic\Diagnostics\Panel
@@ -165,11 +167,9 @@ services:
 
 	nullLoggerHandler:
 		factory: Spameri\Elastic\Import\Run\NullLoggerHandler
-		autowired: false
 
 	nullLock:
 		factory: Spameri\Elastic\Import\Lock\NullLock
-		autowired: false
 
 	nullHandler:
 		factory: Spameri\Elastic\Import\RunHandler\NullHandler
