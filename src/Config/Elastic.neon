@@ -86,7 +86,7 @@ services:
 		autowired: false
 
 	elasticPanel:
-		factory: Spameri\Elastic\Diagnostics\Panel
+		factory: Spameri\Elastic\Diagnostics\Panel(@spameriElasticSearch.elasticPanelLogger)
 
 	validateMapping:
 		factory: Spameri\Elastic\Model\ValidateMapping(%entities%, %settings%, ...)
