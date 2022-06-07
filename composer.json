@@ -30,7 +30,7 @@
 		"nette/security": "^3.0",
 		"nette/utils": "^3.0",
 		"spameri/elastic-query": "^0.6.0",
-		"contributte/console": "^0.6",
+		"contributte/console": "*",
 		"elasticsearch/elasticsearch": "^7.0",
 		"tracy/tracy": "^2.4"
 	},
