@@ -24,9 +24,15 @@
 		}
 	],
 	"require": {
+		"php": ">=8.0",
 		"ext-json": "*",
-		"spameri/elastic-query": "^0.9.0",
-		"elasticsearch/elasticsearch": "^7.0"
+		"nette/di": "^3.0",
+		"nette/security": "^3.0",
+		"nette/utils": "^3.0",
+		"spameri/elastic-query": ">=0.8.0",
+		"contributte/console": "*",
+		"elasticsearch/elasticsearch": "^7.0",
+		"tracy/tracy": "^2.4"
 	},
 	"require-dev": {
 		"spameri/coding-standard": "dev-master",

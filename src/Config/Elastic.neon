@@ -89,7 +89,7 @@ services:
 		factory: Spameri\Elastic\Diagnostics\Panel(@spameriElasticSearch.elasticPanelLogger)
 
 	validateMapping:
-		factory: Spameri\Elastic\Model\ValidateMapping(%entities%, %settings%, ...)
+		factory: Spameri\Elastic\Model\ValidateMapping(%entities%, %settings%, _)
 
 	display:
 		factory: Spameri\Elastic\Model\ValidateMapping\Display
