@@ -10,6 +10,7 @@ class DateTime extends \Nette\Utils\DateTime implements \Spameri\Elastic\Entity\
 	public const INDEX_FORMAT = 'Y-m-d_H-i-s';
 
 
+	#[\ReturnTypeWillChange]
 	public function format($format = NULL): string
 	{
 		if ( ! $format) {
